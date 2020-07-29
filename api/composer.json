@@ -1,0 +1,34 @@
+{
+	"name": "hernanbeiza/deaquinosaleapiphp",
+	"description": "API en PHP de DeAquiNoSaleWebAPP",
+	"version": "0.1.0",
+	"authors": [
+		{
+			"name": "Hernán Beiza",
+			"email": "hernan@hiperactivo.cl"
+		}
+	],
+	"require": {
+		"slim/slim": "^3.8",
+		"slim/php-view": "^2.0",
+		"monolog/monolog": "^1.23",
+		"tuupola/slim-jwt-auth": "^2.4",
+		"vlucas/phpdotenv": "^3.3"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.6"
+	},
+	"autoload": {
+		"psr-4": {
+		"DeAquiNoSaleAPI\\" : "src"
+	}
+	},
+	"scripts": {
+		"start": "php -S localhost:4000 -t public",
+		"start:dev": "php -S 192.168.41.127:4000 -t public",
+		"test": "./vendor/bin/phpunit"
+	},
+	"config": {
+		"process-timeout":0
+	}
+}
