@@ -1,0 +1,2 @@
+Options -Indexes
+RewriteRule ^(.*)$ /public/$1 [L]
